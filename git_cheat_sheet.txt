@@ -1,0 +1,26 @@
+GIT COLLABORATION. (Team of 3)
+A,B,C
+Steps : 
+1. (A) One team member sets up the repository. -> The owner of the repo invites B and C as collaborators 
+2. B and C , clone the repository to have a copy project 
+3. Create Branches. Each team member should create a branch for the feature they are working on. : git branch cmd 
+4. Each team member should work on their branches 
+       a. do the commits to the branch created i.e. the cmd for a commit for party B ,git branch -> if not on the right branch -> git checkout branchname ->  git commit -m "" , git push origin branchname 
+5. ALWAYS REVIEW work before merge : git merge  branchname (join a branch to the current / active branch ) : git fetch -> fetches the latest changes , git pull origin branchname
+6. repeat step 4 to 5 for existing branches or new branches 
+
+MERGE CONFLICTS 
+1. Can occur when 2 or more members modify the same files and the changes conflict with each other (LACK OF COMMUNICATION)
+
+Steps 
+a. Before working pull the latest changes -> git pull cmd : most up-to-date version of the code. 
+b. Identify the conflict : git status -> this exposes the conflicting file and lines of code. 
+c. Analyze and Edit the conflicting code , Testing :
+d. git add . and git commit . -> to the feature branch / expected branch.
+e. git  push -> to feature branch/ expected branch. 
+
+Git cheatsheet 
+- git log : checks the commit history 
+- undoing the last commit  : git reset HEAD ~ commitnumber 
+- git tag tagname
+- git blame : expose who owns an error or a merge conflict gensis. 
